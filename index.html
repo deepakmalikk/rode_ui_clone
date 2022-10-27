@@ -37,7 +37,7 @@
                     sm: "480px",
                     md: "680px",
                     lg: "980px",
-                    xl: "1280px",
+                    xl: "1080px",
                 },
                 extend: {
                     colors: {
@@ -109,32 +109,39 @@
     </div>
 
     <!-- main section rode caster for less than 1280px screen-->
-    <div class="bg-black place-content-center ">
+    <div class="bg-black place-content-center xl:hidden ">
         <div class="md:px-20 ">
             <img src="./assets/02_02_bg_rode-rodecaster-pro-II-home-page-800x700-rgb.jpg" alt="rode caster ">
         </div>
         <div class=" md:px-20 place-items-center ">
-            <img src="./assets/02_RODECasterProII.svg" alt="rode caster text" >
+            <img src="./assets/02_RODECasterProII.svg" alt="rode caster text">
         </div>
-      
-            <div class="text-[#FFFFFF]  text-2xl font-serif mt-5 text-center md:text-4xl">
-                <h1>The Revolution Is Here</h1>
+
+        <div class="text-[#FFFFFF]  text-2xl font-serif mt-5 text-center md:text-4xl">
+            <h1>The Revolution Is Here</h1>
+        </div>
+        <div class="text-[#848484] text-lg w-[428px] ml-auto mr-auto mt-3 md:text-2xl md:w-[550px]">
+            <p>The RØDECaster Pro II is the world's most powerful all-in-one audio solution for streamers,
+                podcasters, musicians, and creators. Take your content to the next level.</p>
+        </div>
+        <div class="flex text-white text-center gap-10   place-content-center  ">
+            <div class="text-[#AD9970] text-xl font-medium mt-6">
+                <button>LEARN MORE</button>
             </div>
-            <div class="text-[#848484] text-lg w-[428px] ml-auto mr-auto mt-3 md:text-2xl md:w-[550px]">
-                <p>The RØDECaster Pro II is the world's most powerful all-in-one audio solution for streamers,
-                    podcasters, musicians, and creators. Take your content to the next level.</p>
+            <div class="border-2 rounded-full bg-[#AD9970] px-4 py-1.5 border-[#AD9970] mt-5 font-bold">
+                <button class="text-lg">BUY NOW</button>
             </div>
-            <div class="flex text-white text-center gap-10   place-content-center  ">
-                <div class="text-[#AD9970] text-xl font-medium mt-6">
-                    <button>LEARN MORE</button>
-                </div>
-                <div class="border-2 rounded-full bg-[#AD9970] px-4 py-1.5 border-[#AD9970] mt-5 font-bold">
-                    <button class="text-lg">BUY NOW</button>
-                </div>
-            </div>
-       
+        </div>
+
     </div>
 
+
+     <!-- main section rode caster for larger screen-->
+
+     <div>
+        <div class="bg-[url('./assets/02_img_rode-caster-pro-rgb.jpg')]"></div>
+        <div class=" bg-[url('./assets/02_img_rode-caster-pro-rgb.jpg')] "></div>
+     </div>
 
 </body>
 
