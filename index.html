@@ -52,7 +52,7 @@
 
 <body>
     <!-- navbar for smaller screen less than 1280px  -->
-    <div class="sticky top-0 z-50 xl:hidden">
+    <div class="sticky top-0 z-50 bg-[#FFFFFF] xl:hidden">
         <div class="flex p-4 relative">
             <div class=" basis-16">
                 <img src="./assets/icons8-menu-48.png" alt="menu icon" class="w-9 h-9">
@@ -75,8 +75,8 @@
     <!-- navbar for screen more than 1280px -->
 
     <!-- nav top -->
-    <div class="invisible  sticky top-0 z-50 xl:visible">
-        <div class="flex relative ">
+    <div class="invisible  xl:visible">
+        <div class="flex ">
             <div class=" flex basis-4/5   pl-24">
                 <img src="./assets/location.svg" alt="location logo" class="w-auto h-5 mt-2" />
                 <p class="ml-2 mt-1.5 text-[#6B6B6B] text-sm">EN</p>
@@ -89,8 +89,8 @@
     </div>
 
     <!-- navbar -->
-    <div class="flex  w-auto   h-auto justify-around invisible xl:visible ">
-        <div class="pl-24">
+    <div class="flex  w-auto h-auto justify-around sticky top-0 z-50 bg-[#FFFFFF] invisible xl:visible ">
+        <div class="pl-24 relative ">
             <img src="./assets/RODE_Logo_87x51_RGB.svg" alt="rode logo" class="w-24 h-24">
         </div>
         <div class="flex gap-x-20 text-20 mt-9 ml-auto   mr-auto  font-[Inter var] text-base font-medium   ">
@@ -105,6 +105,14 @@
             <img src="./assets/search.svg" alt="search logo" class="w-auto h-8">
         </div>
     </div>
+
+    <!-- main section rode caster-->
+    <div class="">
+        <div>
+            <img src="./assets/02_02_bg_rode-rodecaster-pro-II-home-page-800x700-rgb.jpg" alt="rode caster">
+        </div>
+    </div>
+
 </body>
 
 </html>
