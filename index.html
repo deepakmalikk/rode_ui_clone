@@ -34,9 +34,9 @@
                     serif: ["Avenir-Medium"],
                 },
                 screens: {
-                    sm: "420px",
-                    md: "500px",
-                    lg: "903px",
+                    sm: "480px",
+                    md: "680px",
+                    lg: "980px",
                     xl: "1280px",
                 },
                 extend: {
@@ -51,14 +51,37 @@
 </head>
 
 <body>
-    <!-- nav top  -->
-    <div>
-        <div class="flex">
-            <div class="ml-32 flex">
-                <img src="./assets/location.svg" alt="location logo" class="w-5 h-5 mt-2" />
-                <p class="ml-2 mt-1.5 text-[#6B6B6B]">EN</p>
+    <!-- navbar for smaller screen less than 1280px  -->
+    <div class="sticky top-0 z-50 xl:hidden">
+        <div class="flex p-4 relative">
+            <div class=" basis-16">
+                <img src="./assets/icons8-menu-48.png" alt="menu icon" class="w-9 h-9">
             </div>
-            <div class="ml-auto mr-36">
+            <div class="flex mt-1 basis-32 gap-2">
+                <img src="./assets/location.svg" alt="location" class="w-auto h-5 mt-1">
+                <p class="text-[#121416] text-lg font-medium">EN</p>
+            </div>
+            <div class="ml-auto mr-auto mt-1">
+                <img src="./assets/RODE_Logo_87x51_RGB.svg" alt="rode logo" class="w-20 h-auto">
+            </div>
+            <div class="basis-auto mt-1">
+                <img src="./assets/search.svg" alt="search icon" class="w-4
+             h-auto">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- navbar for screen more than 1280px -->
+
+    <!-- nav top -->
+    <div class="invisible  sticky top-0 z-50 xl:visible">
+        <div class="flex relative ">
+            <div class=" flex basis-4/5   pl-24">
+                <img src="./assets/location.svg" alt="location logo" class="w-auto h-5 mt-2" />
+                <p class="ml-2 mt-1.5 text-[#6B6B6B] text-sm">EN</p>
+            </div>
+            <div class="ml-auto mr-auto">
                 <img src="./assets/profile.svg" alt="profile logo" class="w-5 h-5 mt-2" />
             </div>
         </div>
@@ -66,11 +89,11 @@
     </div>
 
     <!-- navbar -->
-    <div class="flex fixed w-auto h-auto">
-        <div class="ml-32">
+    <div class="flex  w-auto   h-auto justify-around invisible xl:visible ">
+        <div class="pl-24">
             <img src="./assets/RODE_Logo_87x51_RGB.svg" alt="rode logo" class="w-24 h-24">
         </div>
-        <div class="flex gap-16 text-20 mt-8 ml-32 mr-auto  text-lg font-[Inter var] font-medium">
+        <div class="flex gap-x-20 text-20 mt-9 ml-auto   mr-auto  font-[Inter var] text-base font-medium   ">
             <p>PRODUCTS</p>
             <p>USER GUIDES</p>
             <p>SOLUTIONS</p>
@@ -78,8 +101,8 @@
             <p>SUPPORT</p>
 
         </div>
-        <div class="mt-8 ml-52">
-            <img src="./assets/search.svg" alt="search logo">
+        <div class="mt-8  ml-auto mr-auto ">
+            <img src="./assets/search.svg" alt="search logo" class="w-auto h-8">
         </div>
     </div>
 </body>
