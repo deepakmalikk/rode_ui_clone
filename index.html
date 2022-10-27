@@ -1,257 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>RØDE Microphones</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-      }
-    </style>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- favicon -->
-    <link
-      rel="shortcut icon"
-      href="./assets/rode-favicon.svg"
-      type="image/x-icon"
-    />
+  <title>RØDE Microphones</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
 
-    <!-- fontawesome icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/rode-favicon.svg" type="image/x-icon" />
 
-    <!-- tailwindCSS in cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- fontawesome icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- tailwind customized config-->
-    <script>
-      tailwind.config = {
-        theme: {
-          fontFamily: {
-            sans: ["Inter var", "Segoe UI"],
-            serif: ["Avenir-Medium"],
-          },
-          screens: {
-            sm: "480px",
-            md: "680px",
-            lg: "980px",
-            xl: "1080px",
-          },
-          extend: {
-            colors: {
-              clifford: "#da373d",
-              "rode-cream": "#AD9970",
-            },
+  <!-- tailwindCSS in cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- tailwind customized config-->
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          sans: ["Inter var", "Segoe UI"],
+          serif: ["Avenir-Medium"],
+        },
+        screens: {
+          sm: "480px",
+          md: "680px",
+          lg: "980px",
+          xl: "1080px",
+        },
+        extend: {
+          colors: {
+            clifford: "#da373d",
+            "rode-cream": "#AD9970",
           },
         },
-      };
-    </script>
-  </head>
+      },
+    };
+  </script>
+</head>
 
-  <body>
-    <!-- navbar for smaller screen less than 1280px  -->
-    <div class="sticky top-0 z-50 bg-[#FFFFFF] xl:hidden">
-      <div class="flex p-4 relative">
-        <div class="basis-16">
-          <img
-            src="./assets/icons8-menu-48.png"
-            alt="menu icon"
-            class="w-9 h-9"
-          />
-        </div>
-        <div class="flex mt-1 basis-32 gap-2">
-          <img
-            src="./assets/location.svg"
-            alt="location"
-            class="w-auto h-5 mt-1"
-          />
-          <p class="text-[#121416] text-lg font-medium">EN</p>
-        </div>
-        <div class="ml-auto mr-auto mt-1">
-          <img
-            src="./assets/RODE_Logo_87x51_RGB.svg"
-            alt="rode logo"
-            class="w-20 h-auto"
-          />
-        </div>
-        <div class="basis-auto mt-1">
-          <img src="./assets/search.svg" alt="search icon" class="w-4 h-auto" />
-        </div>
+<body>
+  <!-- navbar for smaller screen less than 1280px  -->
+  <div class="sticky top-0 z-50 bg-[#FFFFFF] xl:hidden">
+    <div class="flex p-4 relative">
+      <div class="basis-16">
+        <img src="./assets/icons8-menu-48.png" alt="menu icon" class="w-9 h-9" />
+      </div>
+      <div class="flex mt-1 basis-32 gap-2">
+        <img src="./assets/location.svg" alt="location" class="w-auto h-5 mt-1" />
+        <p class="text-[#121416] text-lg font-medium">EN</p>
+      </div>
+      <div class="ml-auto mr-auto mt-1">
+        <img src="./assets/RODE_Logo_87x51_RGB.svg" alt="rode logo" class="w-20 h-auto" />
+      </div>
+      <div class="basis-auto mt-1">
+        <img src="./assets/search.svg" alt="search icon" class="w-4 h-auto" />
       </div>
     </div>
+  </div>
 
-    <!-- navbar for screen more than 1280px -->
+  <!-- navbar for screen more than 1280px -->
 
-    <!-- nav top -->
-    <div class="hidden xl:block">
-      <div class="flex">
-        <div class="flex basis-4/5 pl-24 mr-10">
-          <img
-            src="./assets/location.svg"
-            alt="location logo"
-            class="w-auto h-5 mt-2"
-          />
-          <p class="ml-2 mt-1.5 text-[#6B6B6B] text-sm">EN</p>
-        </div>
-        <div class="ml-auto mr-auto">
-          <img
-            src="./assets/profile.svg"
-            alt="profile logo"
-            class="w-5 h-5 mt-2"
-          />
-        </div>
+  <!-- nav top -->
+  <div class="hidden xl:block">
+    <div class="flex">
+      <div class="flex basis-4/5 pl-24 mr-10">
+        <img src="./assets/location.svg" alt="location logo" class="w-auto h-5 mt-2" />
+        <p class="ml-2 mt-1.5 text-[#6B6B6B] text-sm">EN</p>
       </div>
-      <div class="w-auto h-px bg-[#DEDFE0] mt-1"></div>
-    </div>
-
-    <!-- navbar -->
-    <div class="hidden xl:block sticky top-0 z-50">
-      <div class="flex w-auto h-auto justify-around bg-[#FFFFFF] relative">
-        <div class="px-24">
-          <img
-            src="./assets/RODE_Logo_87x51_RGB.svg"
-            alt="rode logo"
-            class="w-24 h-24"
-          />
-        </div>
-        <div
-          class="flex gap-x-14 text-20 mt-9 ml-auto mr-auto font-[Inter var] text-base font-medium"
-        >
-          <p>PRODUCTS</p>
-          <p>USER GUIDES</p>
-          <p>SOLUTIONS</p>
-          <p>APPAREL</p>
-          <p>SUPPORT</p>
-        </div>
-        <div class="mt-8 ml-auto mr-auto">
-          <img src="./assets/search.svg" alt="search logo" class="w-auto h-8" />
-        </div>
+      <div class="ml-auto mr-auto">
+        <img src="./assets/profile.svg" alt="profile logo" class="w-5 h-5 mt-2" />
       </div>
     </div>
+    <div class="w-auto h-px bg-[#DEDFE0] mt-1"></div>
+  </div>
 
-    <!-- main section rode caster for less than 1280px screen-->
-    <div class="bg-black place-content-center xl:hidden">
-      <div class="md:px-20">
-        <img
-          src="./assets/02_02_bg_rode-rodecaster-pro-II-home-page-800x700-rgb.jpg"
-          alt="rode caster "
-        />
+  <!-- navbar -->
+  <div class="hidden xl:block sticky top-0 z-50">
+    <div class="flex w-auto h-auto justify-around bg-[#FFFFFF] relative">
+      <div class="px-24">
+        <img src="./assets/RODE_Logo_87x51_RGB.svg" alt="rode logo" class="w-24 h-24" />
       </div>
-      <div class="md:px-20 place-items-center">
-        <img src="./assets/02_RODECasterProII.svg" alt="rode caster text" />
+      <div class="flex gap-x-14 text-20 mt-9 ml-auto mr-auto font-[Inter var] text-base font-medium">
+        <p>PRODUCTS</p>
+        <p>USER GUIDES</p>
+        <p>SOLUTIONS</p>
+        <p>APPAREL</p>
+        <p>SUPPORT</p>
       </div>
+      <div class="mt-8 ml-auto mr-auto">
+        <img src="./assets/search.svg" alt="search logo" class="w-auto h-8" />
+      </div>
+    </div>
+  </div>
 
-      <div
-        class="text-[#FFFFFF] text-2xl font-serif mt-5 text-center md:text-4xl"
-      >
+  <!-- main section rode caster for less than 1280px screen-->
+  <div class="bg-black place-content-center xl:hidden">
+    <div class="md:px-20">
+      <img src="./assets/02_02_bg_rode-rodecaster-pro-II-home-page-800x700-rgb.jpg" alt="rode caster " />
+    </div>
+    <div class="md:px-20 place-items-center">
+      <img src="./assets/02_RODECasterProII.svg" alt="rode caster text" />
+    </div>
+
+    <div class="text-[#FFFFFF] text-2xl font-serif mt-5 text-center md:text-4xl">
+      <h1>The Revolution Is Here</h1>
+    </div>
+    <div class="text-[#848484] text-lg w-[428px] ml-auto mr-auto mt-3 md:text-2xl md:w-[550px]">
+      <p>
+        The RØDECaster Pro II is the world's most powerful all-in-one audio
+        solution for streamers, podcasters, musicians, and creators. Take your
+        content to the next level.
+      </p>
+    </div>
+    <div class="flex text-white text-center gap-10 place-content-center">
+      <div class="text-[#AD9970] text-xl font-medium mt-6">
+        <button>LEARN MORE</button>
+      </div>
+      <div class="border-2 rounded-full bg-[#AD9970] px-4 py-1.5 border-[#AD9970] mt-5 font-bold">
+        <button class="text-lg">BUY NOW</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- main section rode caster for larger screen-->
+
+  <div class="hidden xl:block">
+    <div class="bg-auto bg-center bg-[url('./assets/02_img_rode-caster-pro-rgb.jpg')] pt-44 pb-44 pr-20 text-center">
+      <div class="float-right">
+        <img src="./assets/02_RODECasterProII.svg" alt="rode caster text" class="w-[550px]" />
+      </div>
+      <div class="text-[#FFFFFF] text-xl font-medium font-serif pt-20 text-end pr-48">
         <h1>The Revolution Is Here</h1>
       </div>
-      <div
-        class="text-[#848484] text-lg w-[428px] ml-auto mr-auto mt-3 md:text-2xl md:w-[550px]"
-      >
+      <div class="text-[#848484] text-base font-semibold w-[520px] mt-2 ml-auto text-center">
         <p>
           The RØDECaster Pro II is the world's most powerful all-in-one audio
-          solution for streamers, podcasters, musicians, and creators. Take your
-          content to the next level.
+          solution for streamers, podcasters, musicians, and creators. Take
+          your content to the next level.
         </p>
       </div>
-      <div class="flex text-white text-center gap-10 place-content-center">
+      <div class="flex text-white text-center gap-10 place-content-end mr-20">
         <div class="text-[#AD9970] text-xl font-medium mt-6">
           <button>LEARN MORE</button>
         </div>
-        <div
-          class="border-2 rounded-full bg-[#AD9970] px-4 py-1.5 border-[#AD9970] mt-5 font-bold"
-        >
+        <div class="border-2 rounded-full bg-[#AD9970] px-4 py-1.5 border-[#AD9970] mt-5 font-bold">
           <button class="text-lg">BUY NOW</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- main section rode caster for larger screen-->
 
-    <div class="hidden xl:block">
-      <div
-        class="bg-auto bg-center bg-[url('./assets/02_img_rode-caster-pro-rgb.jpg')] pt-44 pb-44 pr-20 text-center"
-      >
-        <div class="float-right">
-          <img
-            src="./assets/02_RODECasterProII.svg"
-            alt="rode caster text"
-            class="w-[550px]"
-          />
-        </div>
-        <div
-          class="text-[#FFFFFF] text-xl font-medium font-serif pt-20 text-end pr-48"
-        >
-          <h1>The Revolution Is Here</h1>
-        </div>
-        <div
-          class="text-[#848484] text-base font-semibold w-[520px] mt-2 ml-auto text-center"
-        >
-          <p>
-            The RØDECaster Pro II is the world's most powerful all-in-one audio
-            solution for streamers, podcasters, musicians, and creators. Take
-            your content to the next level.
-          </p>
-        </div>
-        <div class="flex text-white text-center gap-10 place-content-end mr-20">
-          <div class="text-[#AD9970] text-xl font-medium mt-6">
-            <button>LEARN MORE</button>
-          </div>
-          <div
-            class="border-2 rounded-full bg-[#AD9970] px-4 py-1.5 border-[#AD9970] mt-5 font-bold"
-          >
-            <button class="text-lg">BUY NOW</button>
-          </div>
-        </div>
-      </div>
+
+  <!-- main section NTH-100 for less than 1280px screen-->
+  <div class="bg-white place-content-center xl:hidden">
+    <div class="md:px-20">
+      <img src="./assets/mobile-rode-nth100-lifestyle-insitu-female-looking-down-grey-1920x700-rgb-800x700-6488d79.png"
+        alt="03_bg_rode-nth100-lifestyle-insitu-female " class="h-auto w-screen" />
+    </div>
+    <div class=" place-items-center mt-5 md:px-20">
+      <img src="./assets/03_NTH-100.svg" alt="NTH100 text" />
     </div>
 
+    <div class="text-[#000000] text-2xl font-serif mt-5 text-center md:text-4xl">
+      <h1>Your Search For The Perfect Headphones Is Over</h1>
+    </div>
+    <div class="text-[#848484] text-lg  ml-auto mr-auto mt-3 md:text-xl text-center">
+      <p>
+        Experience sound like never before with the NTH-100s. Exceptional sonic performance, superior comfort and iconic
+        looks that inspires creativity.
+      </p>
+    </div>
+    <div class="flex text-white text-center gap-10 place-content-center">
+      <div class="text-[#AD9970] text-xl font-medium mt-6">
+        <button>LEARN MORE</button>
+      </div>
+      <div class="border-2 rounded-full bg-[#AD9970] px-4 py-1.5 border-[#AD9970] mt-5 font-bold">
+        <button class="text-lg">BUY NOW</button>
+      </div>
+    </div>
+  </div>
 
 
-    <!-- main section NTH-100 for less than 1280px screen-->
-    <div class="bg-white place-content-center xl:hidden">
-        <div class="md:px-20">
-          <img
-            src="./assets/mobile-rode-nth100-lifestyle-insitu-female-looking-down-grey-1920x700-rgb-800x700-6488d79.png"
-            alt="03_bg_rode-nth100-lifestyle-insitu-female " class="h-auto w-screen"
-          />
+  <!-- main section Nth-100 for larger screen-->
+
+  <div class="hidden xl:block">
+    <div
+      class="bg-auto bg-center bg-[url('./assets/03_bg_rode-nth100-lifestyle-insitu-female.jpg')] pt-44 pb-44  text-center">
+      <div class="float-left">
+        <img src="./assets/03_NTH-100.svg" alt="NTh-100 text" class="w-[550px]" />
+      </div>
+      <div class="ml-20">
+      <div class="text-[#000000] text-2xl font-medium font-serif pt-20   text-center w-[500px]">
+        <h1>Your Search For The Perfect Headphones Is Over</h1>
+      </div>
+      <div class="text-[#848484] text-base font-semibold w-[520px] mt-2  mr-auTo text-center w-[480px]">
+        <p>
+          Experience sound like never before with the NTH-100s. Exceptional sonic performance, superior comfort and iconic looks that inspires creativity.
+        </p>
+      </div>
+      <div class="flex text-white text-center gap-10 place-content-start ml-20">
+        <div class="text-[#AD9970] text-lg font-medium mt-6">
+          <button>LEARN MORE</button>
         </div>
-        <div class=" place-items-center mt-5 md:px-20">
-          <img src="./assets/03_NTH-100.svg" alt="NTH100 text" />
-        </div>
-  
-        <div
-          class="text-[#000000] text-2xl font-serif mt-5 text-center md:text-4xl"
-        >
-          <h1>Your Search For The Perfect Headphones Is Over</h1>
-        </div>
-        <div
-          class="text-[#848484] text-lg  ml-auto mr-auto mt-3 md:text-xl text-center"
-        >
-          <p>
-            Experience sound like never before with the NTH-100s. Exceptional sonic performance, superior comfort and iconic looks that inspires creativity.
-          </p>
-        </div>
-        <div class="flex text-white text-center gap-10 place-content-center">
-          <div class="text-[#AD9970] text-xl font-medium mt-6">
-            <button>LEARN MORE</button>
-          </div>
-          <div
-            class="border-2 rounded-full bg-[#AD9970] px-4 py-1.5 border-[#AD9970] mt-5 font-bold"
-          >
-            <button class="text-lg">BUY NOW</button>
-          </div>
+        <div class="border-2 rounded-full bg-[#AD9970] px-4 py-1.5 border-[#AD9970] mt-4 font-bold">
+          <button class="text-lg">BUY NOW</button>
         </div>
       </div>
-  </body>
+    </div></div>
+  </div>
+
+</body>
+
 </html>
