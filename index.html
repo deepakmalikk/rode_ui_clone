@@ -75,9 +75,9 @@
     <!-- navbar for screen more than 1280px -->
 
     <!-- nav top -->
-    <div class="invisible  xl:visible">
+    <div class="hidden  xl:block">
         <div class="flex ">
-            <div class=" flex basis-4/5   pl-24">
+            <div class=" flex basis-4/5   pl-24 mr-10">
                 <img src="./assets/location.svg" alt="location logo" class="w-auto h-5 mt-2" />
                 <p class="ml-2 mt-1.5 text-[#6B6B6B] text-sm">EN</p>
             </div>
@@ -89,29 +89,52 @@
     </div>
 
     <!-- navbar -->
-    <div class="flex  w-auto h-auto justify-around sticky top-0 z-50 bg-[#FFFFFF] invisible xl:visible ">
-        <div class="pl-24 relative ">
-            <img src="./assets/RODE_Logo_87x51_RGB.svg" alt="rode logo" class="w-24 h-24">
-        </div>
-        <div class="flex gap-x-20 text-20 mt-9 ml-auto   mr-auto  font-[Inter var] text-base font-medium   ">
-            <p>PRODUCTS</p>
-            <p>USER GUIDES</p>
-            <p>SOLUTIONS</p>
-            <p>APPAREL</p>
-            <p>SUPPORT</p>
+    <div class=" hidden  xl:block sticky top-0 z-50">
+        <div class=" flex  w-auto h-auto justify-around  bg-[#FFFFFF] relative ">
+            <div class="px-24 ">
+                <img src="./assets/RODE_Logo_87x51_RGB.svg" alt="rode logo" class="w-24 h-24">
+            </div>
+            <div class="flex gap-x-14 text-20 mt-9 ml-auto   mr-auto  font-[Inter var] text-base font-medium   ">
+                <p>PRODUCTS</p>
+                <p>USER GUIDES</p>
+                <p>SOLUTIONS</p>
+                <p>APPAREL</p>
+                <p>SUPPORT</p>
 
-        </div>
-        <div class="mt-8  ml-auto mr-auto ">
-            <img src="./assets/search.svg" alt="search logo" class="w-auto h-8">
+            </div>
+            <div class="mt-8  ml-auto mr-auto ">
+                <img src="./assets/search.svg" alt="search logo" class="w-auto h-8">
+            </div>
         </div>
     </div>
 
-    <!-- main section rode caster-->
-    <div class="">
-        <div>
-            <img src="./assets/02_02_bg_rode-rodecaster-pro-II-home-page-800x700-rgb.jpg" alt="rode caster">
+    <!-- main section rode caster for less than 1280px screen-->
+    <div class="bg-black place-content-center ">
+        <div class="md:px-20 ">
+            <img src="./assets/02_02_bg_rode-rodecaster-pro-II-home-page-800x700-rgb.jpg" alt="rode caster ">
         </div>
+        <div class=" md:px-20 place-items-center ">
+            <img src="./assets/02_RODECasterProII.svg" alt="rode caster text" >
+        </div>
+      
+            <div class="text-[#FFFFFF]  text-2xl font-serif mt-5 text-center md:text-4xl">
+                <h1>The Revolution Is Here</h1>
+            </div>
+            <div class="text-[#848484] text-lg w-[428px] ml-auto mr-auto mt-3 md:text-2xl md:w-[550px]">
+                <p>The RØDECaster Pro II is the world's most powerful all-in-one audio solution for streamers,
+                    podcasters, musicians, and creators. Take your content to the next level.</p>
+            </div>
+            <div class="flex text-white text-center gap-10   place-content-center  ">
+                <div class="text-[#AD9970] text-xl font-medium mt-6">
+                    <button>LEARN MORE</button>
+                </div>
+                <div class="border-2 rounded-full bg-[#AD9970] px-4 py-1.5 border-[#AD9970] mt-5 font-bold">
+                    <button class="text-lg">BUY NOW</button>
+                </div>
+            </div>
+       
     </div>
+
 
 </body>
 
